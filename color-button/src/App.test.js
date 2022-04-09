@@ -27,7 +27,7 @@ test("Background color will be changed", () => {
   expect(linkElement.textContent).toBe("Change to Blue");
 });
 
-test("Test check box is checked", () => {
+test("Check box is checked yes", () => {
   render(<App></App>);
   const checkboxElement = screen.getByRole("checkbox", {
     name: "Disable button",
