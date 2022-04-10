@@ -4,6 +4,8 @@
 /node_modules
 /color-button/node_modules
 /udemy-TESTING-LIBRARY
+/color-button/.vscode
+/color-button/.eslintcache
 /.pnp
 .pnp.js
 

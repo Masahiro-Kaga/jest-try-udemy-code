@@ -23,4 +23,35 @@
         eslint-plugin-jest-dom
         eslint-plugin-testing-library
 
-        
+    package.jsonの以下を削除
+        "eslintConfig": {
+            "extends": [
+            "react-app",
+            "react-app/jest"
+            ]
+        },
+
+    .eslintrc.jsonという名前のファイルを追加して、以下を記載。
+        {
+            "plugins": [
+                "testing-library",
+                "jest-dom"
+            ],
+            "extends": [
+                "react-app",
+                "react-app/jest",
+                "plugin:testing-library/react",
+                "plugin:jest-dom/recommended"        
+            ]
+        }
+
+30
+    .vscodeフォルダを作成して、その中のsetting.jsonファイルを作る。
+    そして次を追加。
+        {
+            "editor.codeActionsOnSave": {
+                "source.fixAll.eslint": true
+            }
+        }
+
+    
